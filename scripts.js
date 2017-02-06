@@ -1,7 +1,7 @@
 /* toggle menu on click */
 $(document).ready(function(){
     $("#menu-icon").click(function(){
-        $("#main-nav").toggle();
+        $("#main-nav").slideToggle();
     });
 });
 /* menu shows on window resize */
