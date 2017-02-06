@@ -12,7 +12,6 @@ body, nav {
 body {
   font-size: 100%;
   font-family: 'Roboto', sans-serif;
-  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -32,6 +31,8 @@ nav {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
   text-align: center;
+  overflow: hidden;
+
 }
 
 section {
