@@ -26,7 +26,7 @@ nav {
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5);
   position: fixed;
   top: 0;
-  width: auto;
+  width: 100%;
   z-index: 9999;
   font-family: 'Montserrat', sans-serif;
   background-color: white;
@@ -71,7 +71,7 @@ nav > i {
 #logo {
   position: fixed;
   left: 50%;
-  width: 130px;
+  width: auto;
   margin-left: -65px;
 }
 
