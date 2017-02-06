@@ -10,6 +10,7 @@ body, nav {
 }
 
 body {
+  width: 100%;
   font-size: 100%;
   font-family: 'Roboto', sans-serif;
 }
@@ -31,8 +32,6 @@ nav {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
   text-align: center;
-  overflow: hidden;
-
 }
 
 section {
