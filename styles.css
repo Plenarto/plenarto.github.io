@@ -160,14 +160,21 @@ nav > i {
   z-index: 100;
 }
 
+a {color: lightgray;}
+a:active {color: lightgray;}
+a:hover {color: #2CB8DB;}
+
+
+
 .back-to-top a {
   color: gray;
   font-size: 2.5em;
 }
 
 .back-to-top a:hover {
-  color: #2CB8DB;
   transition: 0.5s;
+  color: #2CB8DB;
+  }
 }
 
 .main-container {
@@ -340,6 +347,7 @@ section .row > .col-12 {
   width: 150px;
   height: 150px;
   margin: 0 10px 20px;
+  padding: 0 20px;
   position: relative;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
@@ -407,14 +415,10 @@ img.technology-logo {
 }
 
 .project-text a {
-  color: lightgray;
   font-size: 3em;
   padding: 0 10px;
 }
 
-.project-text a:hover {
-  color: rgba(44, 184, 219, 1);
-}
 
 .project-text {
   position: absolute;
@@ -486,14 +490,15 @@ input[type=submit]:hover {
 }
 
 .contact-options a {
-  color: gray;
   font-size: 2.5em;
   text-decoration: none;
+  color: gray;
 }
 
 .contact-options a:hover {
   color: #2CB8DB;
 }
+
 
 .footer-social {
   color: gray;
@@ -501,6 +506,5 @@ input[type=submit]:hover {
 }
 
 .footer-social:hover {
-  color: #2CB8DB;
   transition: 0.4s;
 }
