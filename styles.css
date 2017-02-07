@@ -17,6 +17,7 @@ html,body {
 
 html {
     overflow-x: hidden;   /* mobile fix */
+    height: 100%;
 }
 
 body {
