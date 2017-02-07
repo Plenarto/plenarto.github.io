@@ -30,7 +30,8 @@ a:visited {
 }
 a:hover,
 i#menu-icon:hover,
-.contact-options a:hover {
+.contact-options a:hover,
+footer .footer-social:hover {
   color: #3A539B;
   transition: color 0.3s;
 }
@@ -381,7 +382,7 @@ img.technology-logo {
 }
 
 .project-container {
-  max-width: 400px;
+  max-width: 350px;
   max-height: 250px;
   margin: 0 10px 20px;
   position: relative;
@@ -433,7 +434,7 @@ img.technology-logo {
 
 .project-text {
   position: absolute;
-  width: 400px;
+  width: 350px;
   top: 50%;
   left: 50%;
   padding: 0 50px;
@@ -513,8 +514,4 @@ input[type=submit]:hover {
 footer .footer-social {
   color: gray;
   font-size: 1.4em;
-}
-
-footer .footer-social:hover {
-  transition: 0.4s;
 }
