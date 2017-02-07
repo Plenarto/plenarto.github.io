@@ -15,10 +15,13 @@ html,body {
     padding: 0px;
 }
 
+html {
+    overflow-x: hidden;   /* mobile fix */
+}
+
 body {
   font-size: 100%;
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;   /* mobile fix */
   color: #4d4d4d;
 }
 
