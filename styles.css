@@ -25,7 +25,8 @@ body {
 
 a,
 a:active,
-a:visited {
+a:visited,
+i#menu-icon:active {
   color: #4d4d4d;
 }
 a:hover,
