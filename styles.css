@@ -15,11 +15,6 @@ html,body {
     padding: 0px;
 }
 
-html {
-    overflow-x: hidden;   /* mobile fix */
-    height: 100%;
-}
-
 body {
   font-size: 100%;
   font-family: 'Roboto', sans-serif;
