@@ -156,7 +156,7 @@ nav > i {
     padding-right: 10px;
   }
   nav {
-    overflow: hidden;
+    overflow-y: hidden;
   }
 }
 
