@@ -18,7 +18,6 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 body {
@@ -449,7 +448,7 @@ img.technology-logo {
 .contact-area {
   width: 90%;
   margin-bottom: 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open-Sans', sans-serif;
   font-size: 1em;
 }
 
