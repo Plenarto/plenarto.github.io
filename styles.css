@@ -64,23 +64,12 @@ section {
   text-align: center;
 }
 
-::-moz-selection {
-  background: #2CB8DB;
-  color: white;
-}
-::selection {
-  background: #2CB8DB;
-  color: white;
-}
-
 footer {
   background-color: lightgray;
   height: 40px;
   line-height: 40px;
   text-align: center;
 }
-
-
 
 
 /* NAVIGATION */
