@@ -374,18 +374,24 @@ img.technology-logo {
   margin: 1px;
 }
 
+
+#projects .main-container {
+  overflow: hidden; /*fixes IE horizontal scroll */
+}
+
 .project-container {
   max-width: 350px;
   max-height: 200px;
-  margin: 0 10px 20px;
+  margin: 0px 10px 50px;
   position: relative;
-  box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.5);
 }
+
 
 .project-image {
   display: block;
   width: 100%;
   height: auto;
+  box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.5);
 }
 
 .project-overlay {
