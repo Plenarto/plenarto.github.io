@@ -26,6 +26,9 @@ body {
   color: #4d4d4d;
 }
 
+::-moz-selection { background-color: #F39C12;}
+::selection { background-color: #F39C12;}
+
 a,
 a:active,
 a:visited,
@@ -35,7 +38,7 @@ i#menu-icon:active {
 a:hover,
 i#menu-icon:hover,
 .contact-options a:hover,
-footer .footer-social:hover {
+.footer-social a:hover {
   color: #3A539B;
   transition: color 0.3s;
 }
@@ -70,8 +73,8 @@ section {
 
 footer {
   background-color: lightgray;
-  height: 40px;
-  line-height: 40px;
+  height: 60px; /* Remember to change body padding-bottom when you change footer height (sticky footer) */
+  line-height: 60px;
   text-align: center;
 }
 
@@ -313,7 +316,7 @@ hr.separator {
         justify-content: space-around;
       }
       #about img {
-        max-width: 100% !important;
+        max-width: 80% !important;
       }
 }
 
@@ -321,6 +324,10 @@ hr.separator {
   border-radius: 50%;
   max-width: 30%;
   border: solid #3A539B 2px;
+}
+
+.hideme {
+  opacity: 0;
 }
 
 .about-text  {
@@ -374,82 +381,99 @@ img.technology-logo {
   margin: 1px;
 }
 
-
-#projects .main-container {
-  overflow: hidden; /*fixes IE horizontal scroll */
+.project-container a {
+  font-size: 2.5em;
+  padding: 0 10px;
 }
 
-.project-container {
-  max-width: 350px;
-  max-height: 200px;
-  margin: 0px 10px 50px;
+.project-container h4 {
+  color: #3A539B;
+  font-size: 1.1em;
+}
+
+.project-container b {
+  color: #F39C12;
+}
+
+.project-container a:active,
+.project-container a:visited {
+}
+
+.project-container a:hover {
+  color: #F39C12;
+}
+
+#projects .project-container {
+  padding: 25px 25px 40px;
+}
+
+.picture-with-overlay {
+  width: 100%;
   position: relative;
 }
 
-
-.project-image {
+#projects img {
   display: block;
   width: 100%;
   height: auto;
-  box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.5);
 }
 
-.project-overlay {
+.overlay {
   position: absolute;
-  bottom: 100%;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
   height: 100%;
+  width: 100%;
   opacity: 0;
-  transition: 0.8s ease;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.8);
 }
 
-.project-container:hover .project-overlay {
+.picture-with-overlay:hover .overlay {
   opacity: 1;
 }
 
-.project-text h4 {
-  color: lightgray;
+.overlay-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-.project-text a {
-  font-size: 2.5em;
-  padding: 0 10px;
-  color: lightgray;
+.overlay-text a,
+.vertical-line {
+  font-size: 8vw;
 }
 
-.project-text a:active,
-.project-text a:visited {
-  color: lightgray;
+@media screen and (min-width: 800px) {
+  .overlay-text a,
+  .vertical-line {
+    font-size: 4vw;
+  }
 }
 
-.project-text a:hover {
+.overlay-text a {
+  color: white;
+
+}
+
+.overlay-text a:hover {
   color: #F39C12;
 }
 
-.project-text {
-  position: absolute;
-  width: 350px;
-  top: 50%;
-  left: 50%;
-  padding: 0 50px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  color: lightgray;
+.vertical-line {
+  color: #F39C12;
 }
 
 .contact-wrapper {
   max-width: 700px;
   margin: 0 auto 80px;
-  box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.5);
-  border-left: solid 3px #3A539B;
-  border-right: solid 3px lightgray;
+  box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.5), 0px -5px 3px 0px rgba(0,0,0,0.5), 5px 0px 3px 0px rgba(0,0,0,0.5),  -5px 0px 3px 0px rgba(0,0,0,0.5);
 }
-
 
 .contact-area {
   width: 90%;
@@ -486,7 +510,9 @@ input[type=submit]:hover {
   }
 
 .contact-form-container,
-.contact-options {
+.contact-options,
+.project-container,
+.contact-wrapper {
   background-color: lightgray;
 
 }
@@ -500,7 +526,7 @@ input[type=submit]:hover {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: nowrap;
-  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .contact-options a {
@@ -510,7 +536,13 @@ input[type=submit]:hover {
 }
 
 
-footer .footer-social {
+.footer-social {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.footer-social a {
+  padding: 0 20px;
   color: gray;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
