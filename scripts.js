@@ -64,5 +64,9 @@ $(window).scroll( function(){
         if( bottom_of_window > bottom_of_object ){
             $(this).animate({'opacity':'1'},800);
         }
+        /* If the object is completely invisible in the window, fade it out */
+        if( bottom_of_window < bottom_of_object ){
+            $(this).animate({'opacity':'0'},800);
+        }
     });
 });
